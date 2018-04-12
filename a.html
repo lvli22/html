@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            font-size:20px;
+        }
+        .list{
+            display: flex;
+            width:100%;
+            height:40px;
+        }
+        .list li{
+            width:25%;
+            line-height: 40px;
+        }
+        .bg{
+            color: #fcc;
+        }
+    </style>
+</head>
+<body>
+    <div class="tab">
+        <ul class="list">
+            <li>智能品牌</li>
+            <li>智能品牌</li>
+            <li>智能品牌</li>
+            <li>智能品牌</li>
+        </ul>
+    </div>
+    <script src="jquery-1.11.1.js"></script>
+    <script>
+      $('.list li').on('click',function(){
+          $(this).addClass('bg').siblings().removeClass('bg');
+      })
+    </script>
+</body>
+</html>
